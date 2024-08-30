@@ -1,0 +1,72 @@
+* {
+  font-family: "Plus Jakarta SanS", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 4.67em 0;
+  background-color: black;
+}
+
+/* Typography */
+h1,
+span {
+  font-family: "Cizel", serif;
+  background-image: linear-gradient(to right, #e9ce6e, #b3873a);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* Main content */
+.order_success_container {
+  width: 39.72%;
+  height: 552px;
+  margin: 0 auto;
+  padding: 23px 63px;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+span {
+  padding: 0;
+  font-size: 56.87px;
+  font-weight: 400;
+  line-height: 76.66px;
+  text-align: center;
+}
+
+span {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+}
+
+.order_success_container img {
+  width: 27.12%;
+  height: 163px;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 35.28px;
+  text-align: center;
+  color: #ffffff;
+}
+
+h3 {
+  margin-top: 0.5em;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25.2px;
+  text-align: center;
+  color: #7f7e83;
+}

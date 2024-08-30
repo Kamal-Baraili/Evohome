@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add to cart</title>
+
+    <!-- Google font linking -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Ovo&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Linking Css -->
+    <link rel="stylesheet" href="../../css/add_to_cart.css" />
+  </head>
+  <body>
+    <!-- Header/Nav -->
+    <header>
+      <div class="nav_bar">
+        <div class="logo_image_container">
+          <a href="../index.html">
+            <img
+              src="../../images/logo/Logo.png"
+              alt="logo"
+              height="24px"
+              width="124px"
+            />
+          </a>
+        </div>
+
+        <div class="nav_list">
+          <div class="nav_menus">
+            <a class="checked" href="../index.html">Home</a>
+            <a href="../about_us.html">About us</a>
+            <a href="../contact_us.html">Contact us</a>
+          </div>
+
+          <div class="nav_icons">
+            <img src="../../images/icons/search_icon.png" alt="" />
+            <img src="../../images/icons/shopping_icon.png" alt="" />
+            <img src="../../images/icons/mode_select_icon.png" alt="" />
+
+            <a href="profile.html">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  fill="white"
+                  d="M128 26a102 102 0 1 0 102 102A102.12 102.12 0 0 0 128 26M71.44 198a66 66 0 0 1 113.12 0a89.8 89.8 0 0 1-113.12 0M94 120a34 34 0 1 1 34 34a34 34 0 0 1-34-34m99.51 69.64a77.53 77.53 0 0 0-40-31.38a46 46 0 1 0-51 0a77.53 77.53 0 0 0-40 31.38a90 90 0 1 1 131 0"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Categrories -->
+    <div class="categories">
+      <a href="../stylish_rugs.html" class="category_item">
+        <img src="../../images/icons/stylish_rugs.png" alt="" />
+        <p>STYLISH RUGS</p>
+      </a>
+
+      <a href="../mattress.html" class="category_item">
+        <img src="../../images/icons/mattress.png" alt="" />
+        <p>MATTRESS</p>
+      </a>
+
+      <a href="../furniture_cover.html" class="category_item">
+        <img src="../../images/icons/furniture.png" alt="" />
+        <p>Furniture Cover</p>
+      </a>
+
+      <a href="../bed_sheets.html" class="category_item">
+        <img src="../../images/icons/bed_sheets.png" alt="" />
+        <p>BED SHEETS</p>
+      </a>
+
+      <a href="../bath_towel.html" class="category_item">
+        <img src="../../images/icons/bath_towel.png" alt="" />
+        <p>BATH TOWEL</p>
+      </a>
+
+      <a href="../gadgets.html" class="category_item">
+        <img src="../../images/icons/gadgets.png" alt="" />
+        <p>GADGETS</p>
+      </a>
+
+      <a href="../other_products.html" class="category_item">
+        <img src="../../images/icons/other_products.png" alt="" />
+        <p>OTHER PRODUCTS</p>
+      </a>
+    </div>
+
+    <h1 class="add_to_cart_heading">YOUR SHOPPING <span>CART</span></h1>
+
+    <!-- Main add_to_cart_content -->
+    <div class="add_to_cart_main_container">
+      <div class="items_container">
+        <div class="table_headings_container">
+          <h6 class="table_heading_1">PRODUCT</h6>
+          <h6 class="table_heading_2">QUANTITY</h6>
+          <h6 class="table_heading_3">TOTAL</h6>
+        </div>
+
+        <div class="product_details" style="margin-bottom: 2.25em">
+          <img src="../../images/rugs_images/rugs_image7.jpg" alt="" />
+          <div class="product_details_and_remove">
+            <div class="product_description">
+              <h3>Beautiful rugs</h3>
+              <p style="margin: 0.55em 0 0 0">Color: color 1</p>
+              <p style="margin: 0.65em 0">Pattern: pattern 1</p>
+              <h4>Rs.1800</h4>
+              <div class="quantity">
+                <span>-</span>
+                <span>1</span>
+                <span>+</span>
+              </div>
+            </div>
+            <div class="remove">
+              <img src="login_icons/delete.png" alt="" />
+              <h4>Rs.1800</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="middle_border">
+          <div class="product_details">
+            <img
+              src="../../images/bed_sheets_images/bed_sheets_image4.jpg"
+              alt=""
+            />
+            <div class="product_details_and_remove">
+              <div class="product_description">
+                <h3>Bedsheet</h3>
+                <p style="margin: 0.55em 0 0 0">Color: color 1</p>
+                <p style="margin: 0.65em 0">Pattern: pattern 1</p>
+                <h4>Rs.1000</h4>
+                <div class="quantity">
+                  <span>-</span>
+                  <span>1</span>
+                  <span>+</span>
+                </div>
+              </div>
+              <div class="remove">
+                <img src="login_icons/delete.png" alt="" />
+                <h4>Rs.1000</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product_details" style="margin: 2.25em 0">
+          <img src="../../images/rugs_images/see_our_rugs_image2.png" alt="" />
+          <div class="product_details_and_remove">
+            <div class="product_description">
+              <h3>Beautiful pillow</h3>
+              <p style="margin: 0.55em 0 0 0">Color: color 1</p>
+              <p style="margin: 0.65em 0">Pattern: pattern 1</p>
+              <h4>Rs.1300</h4>
+              <div class="quantity">
+                <span>-</span>
+                <span>1</span>
+                <span>+</span>
+              </div>
+            </div>
+            <div class="remove">
+              <img src="login_icons/delete.png" alt="" />
+              <h4>Rs.1300</h4>
+            </div>
+          </div>
+        </div>
+
+        <p class="special_order_sentence">Special Order Notes</p>
+        <textarea
+          name="message"
+          id=""
+          placeholder="Please Enter  your Request here "
+        ></textarea>
+      </div>
+
+      <!-- Aside section -->
+      <div class="order_summary_container">
+        <div class="order_summary_item">
+          <div class="order_summary_card">
+            <h5>Order Summary</h5>
+            <div class="order_summary_details">
+              <div class="order_summary_flex">
+                <span>Subtotal</span>
+                <span>Rs.4100</span>
+              </div>
+              <div class="order_summary_flex">
+                <span>Discount(-20%)</span>
+                <span class="discount_span">-Rs.113</span>
+              </div>
+              <div class="order_summary_flex">
+                <span>Delivery Fee</span>
+                <span>Rs.100</span>
+              </div>
+              <div class="order_summary_flex">
+                <span>Tax Fee</span>
+                <span>Rs.1200</span>
+              </div>
+              <div class="order_total">
+                <span>Total</span>
+                <span class="total_span">Rs.4200</span>
+              </div>
+              <a class="check_out_hyperlink" href="check_out_page.html"
+                ><button>
+                  GO TO CHECKOUT
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 12h16m-7-7l7 7l-7 7"
+                    />
+                  </svg></button
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer_container" style="border-top: 1px solid #1d1d1d">
+      <div class="footer_flex">
+        <div class="footer_flex_item_a">
+          <div class="footer_logo_and_details">
+            <div class="footer_logo_image">
+              <img
+                src="../../images/logo/footer_logo.png"
+                alt=""
+                height="30px"
+              />
+            </div>
+            <div class="footer_logo_text">
+              <p style="margin-top: 2em">
+                Behind Subidhanagar Bigmart, <br />
+                Kathmandu, Bagmati, Nepal 44660
+              </p>
+
+              <p>
+                Phone: 980000000 <br />
+                Email: evohome@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer_flex_item_b">
+          <div class="products">
+            <h1 class="footer_headings">PRODUCTS</h1>
+            <ul class="footer_list">
+              <li>
+                <a href="" class="products_list footer_links">Stylish Rugs</a>
+              </li>
+              <li>
+                <a href="" class="products_list footer_links"
+                  >Chair & Sofa Covers</a
+                >
+              </li>
+              <li>
+                <a href="" class="products_list footer_links">Bed Sheets</a>
+              </li>
+              <li><a href="" class="products_list footer_links">Gadgets</a></li>
+              <li>
+                <a href="" class="products_list footer_links">Other Products</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="quick_links">
+            <h1 class="footer_headings">QUICK LINKS</h1>
+            <ul class="footer_list">
+              <li><a href="" class="quick_links_list footer_links">Home</a></li>
+              <li>
+                <a href="" class="quick_links_list footer_links">About Us</a>
+              </li>
+              <li><a href="" class="quick_links_list footer_links">Cart</a></li>
+              <li>
+                <a href="" class="quick_links_list footer_links">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="legal">
+            <h1 class="footer_headings">LEGAL</h1>
+            <ul class="footer_list">
+              <li>
+                <a href="" class="legal_list footer_links">Shipping Policy</a>
+              </li>
+              <li>
+                <a href="" class="legal_list footer_links">Refund Policy</a>
+              </li>
+              <li>
+                <a href="" class="legal_list footer_links">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="" class="legal_list footer_links">Terms of Services</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="final_footer_container">
+        <div class="all_rights_reserved">
+          <span>2024 Evohome </span><span>|</span
+          ><span> All rights reserved.</span>
+        </div>
+
+        <div class="designed_by">
+          <span style="color: #7a7a7a">Designed & Developed by</span
+          ><span class="logo_span"> WebX</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
