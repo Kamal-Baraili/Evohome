@@ -1,3 +1,9 @@
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 * {
   font-family: "Plus Jakarta Sans", sans-serif;
   box-sizing: border-box;
@@ -22,21 +28,31 @@ header {
 .logo_image {
   width: 100%;
   object-fit: cover;
-  margin: 0.5em 0;
+  margin: 0;
 }
 
 .nav_bar {
   width: 86.7%;
-  height: 64px;
   padding: 0;
-  margin-left: 6em;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   height: 36px;
+  align-items: center;
   flex-wrap: wrap;
 }
 
+.nav_bar a {
+  margin: 0;
+}
+
 .hamburger_menu {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.small_devices_nav {
   display: none;
 }
 
@@ -102,8 +118,22 @@ header {
     display: none;
   }
 
-  .hamburger_menu {
-    display: block;
+  .small_devices_nav {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav_bar {
+    width: 98%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .small_devices_nav {
+    width: 30%;
   }
 }
 
@@ -116,17 +146,23 @@ header {
 /* Categories */
 
 .categories {
-  max-width: 100%;
+  width: 100%;
   height: 57px;
-  padding: 0 5.625em;
-  display: flex;
+  padding: 0;
   background-image: linear-gradient(to right, #e9ce6e, #b3873a);
-  justify-content: space-between;
-  align-items: center;
   position: sticky;
   top: 0;
-  flex-wrap: wrap;
   z-index: 3;
+}
+
+.categories_flex_container {
+  width: 88%;
+  height: 57px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .categories_checked p {
@@ -158,10 +194,27 @@ header {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 1024px) {
+  .categories {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .categories a {
+    padding: 0;
+  }
+
+  .category_item p {
+    font-size: 0.95rem;
+  }
+}
+
 /* Homepage main-grid section */
 .grid_container {
   display: grid;
   grid-template-columns: 49.63% 50.37%;
+  margin: 0 auto;
 }
 
 .grid_item1,
@@ -209,13 +262,13 @@ header {
   height: 31px;
   position: absolute;
   top: 622px;
-  margin-left: 1350px;
+  margin-left: 84.375em;
   padding: 2px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 0;
-  opacity: 0;
+  opacity: 1;
   transition: 0.5s;
 }
 
@@ -230,7 +283,7 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 0;
-  opacity: 0;
+  opacity: 1;
   transition: 0.5s;
 }
 
@@ -257,8 +310,18 @@ header {
 
 .grid_numbers:hover .explore_divide {
   top: 380px;
-  margin-left: 560px;
+  margin-left: 0;
   opacity: 0.9;
+}
+
+@media screen and (max-width: 1024px) {
+  .explore {
+    display: none;
+  }
+
+  .explore_divide {
+    display: none;
+  }
 }
 
 .numbers {
