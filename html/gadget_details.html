@@ -46,16 +46,9 @@
     <!-- Header/Nav -->
     <header>
       <div class="nav_bar">
-        <div class="logo_image_container">
-          <a href="index.html">
-            <img
-              src="../images/logo/Logo.png"
-              alt="logo"
-              height="24px"
-              width="124px"
-            />
-          </a>
-        </div>
+        <a href="index.html">
+          <img class="logo_image" src="../images/logo/Logo.png" alt="logo" />
+        </a>
 
         <div class="nav_list">
           <div class="nav_menus">
@@ -73,45 +66,69 @@
             >
           </div>
         </div>
+
+        <div class="small_devices_nav">
+          <img src="../images/icons/search_icon.png" alt="" />
+
+          <img src="../images/icons/shopping_icon.png" alt="" />
+
+          <svg
+            class="hamburger_menu"
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 20 20"
+          >
+            <rect width="20" height="20" fill="none" />
+            <path
+              fill="#B3873A"
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1m0 5a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1m6 5a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2h-6a1 1 0 0 1-1-1"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
       </div>
     </header>
 
     <!-- Categrories -->
     <div class="categories">
-      <a href="stylish_rugs.html" class="category_item">
-        <img src="../images/icons/stylish_rugs.png" alt="" />
-        <p>STYLISH RUGS</p>
-      </a>
+      <div class="categories_flex_container">
+        <a href="stylish_rugs.html" class="category_item">
+          <img src="../images/icons/stylish_rugs.png" alt="" />
+          <p>STYLISH RUGS</p>
+        </a>
 
-      <a href="mattress.html" class="category_item">
-        <img src="../images/icons/mattress.png" alt="" />
-        <p>MATTRESS</p>
-      </a>
+        <a href="mattress.html" class="category_item">
+          <img src="../images/icons/mattress.png" alt="" />
+          <p>MATTRESS</p>
+        </a>
 
-      <a href="furniture_cover.html" class="category_item">
-        <img src="../images/icons/furniture.png" alt="" />
-        <p>Furniture Cover</p>
-      </a>
+        <a href="furniture_cover.html" class="category_item">
+          <img src="../images/icons/furniture.png" alt="" />
+          <p>Furniture Cover</p>
+        </a>
 
-      <a href="bed_sheets.html" class="category_item">
-        <img src="../images/icons/bed_sheets.png" alt="" />
-        <p>BED SHEETS</p>
-      </a>
+        <a href="bed_sheets.html" class="category_item">
+          <img src="../images/icons/bed_sheets.png" alt="" />
+          <p>BED SHEETS</p>
+        </a>
 
-      <a href="bath_towel.html" class="category_item">
-        <img src="../images/icons/bath_towel.png" alt="" />
-        <p>BATH TOWEL</p>
-      </a>
+        <a href="bath_towel.html" class="category_item">
+          <img src="../images/icons/bath_towel.png" alt="" />
+          <p>BATH TOWEL</p>
+        </a>
 
-      <a href="gadgets.html" class="category_item categories_checked">
-        <img src="../images/icons/gadgets.png" alt="" />
-        <p>GADGETS</p>
-      </a>
+        <a href="gadgets.html" class="category_item categories_checked">
+          <img src="../images/icons/gadgets.png" alt="" />
+          <p>GADGETS</p>
+        </a>
 
-      <a href="other_products.html" class="category_item">
-        <img src="../images/icons/other_products.png" alt="" />
-        <p>OTHER PRODUCTS</p>
-      </a>
+        <a href="other_products.html" class="category_item">
+          <img src="../images/icons/other_products.png" alt="" />
+          <p>OTHER PRODUCTS</p>
+        </a>
+      </div>
     </div>
 
     <!-- Rug Details main section -->
@@ -507,11 +524,29 @@
                 Kathmandu, Bagmati, Nepal 44660
               </p>
 
-              <p>
+              <h6 class="small_texts">
                 Phone: 980000000 <br />
                 Email: evohome@gmail.com
-              </p>
+              </h6>
             </div>
+          </div>
+
+          <div class="legal legal_small_device">
+            <h1 class="footer_headings">LEGAL</h1>
+            <ul class="footer_list">
+              <li>
+                <a href="" class="legal_list footer_links">Shipping Policy</a>
+              </li>
+              <li>
+                <a href="" class="legal_list footer_links">Refund Policy</a>
+              </li>
+              <li>
+                <a href="" class="legal_list footer_links">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="" class="legal_list footer_links">Terms of Services</a>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -520,19 +555,31 @@
             <h1 class="footer_headings">PRODUCTS</h1>
             <ul class="footer_list">
               <li>
-                <a href="" class="products_list footer_links">Stylish Rugs</a>
+                <a href="stylish_rugs.html" class="products_list footer_links"
+                  >Stylish Rugs</a
+                >
               </li>
               <li>
-                <a href="" class="products_list footer_links"
+                <a
+                  href="furniture_cover.html"
+                  class="products_list footer_links"
                   >Chair & Sofa Covers</a
                 >
               </li>
               <li>
-                <a href="" class="products_list footer_links">Bed Sheets</a>
+                <a href="bed_sheets.html" class="products_list footer_links"
+                  >Bed Sheets</a
+                >
               </li>
-              <li><a href="" class="products_list footer_links">Gadgets</a></li>
               <li>
-                <a href="" class="products_list footer_links">Other Products</a>
+                <a href="gadgets.html" class="products_list footer_links"
+                  >Gadgets</a
+                >
+              </li>
+              <li>
+                <a href="other_products.html" class="products_list footer_links"
+                  >Other Products</a
+                >
               </li>
             </ul>
           </div>
@@ -540,18 +587,32 @@
           <div class="quick_links">
             <h1 class="footer_headings">QUICK LINKS</h1>
             <ul class="footer_list">
-              <li><a href="" class="quick_links_list footer_links">Home</a></li>
               <li>
-                <a href="" class="quick_links_list footer_links">About Us</a>
+                <a href="index.html" class="quick_links_list footer_links"
+                  >Home</a
+                >
               </li>
-              <li><a href="" class="quick_links_list footer_links">Cart</a></li>
               <li>
-                <a href="" class="quick_links_list footer_links">Contact Us</a>
+                <a href="about_us.html" class="quick_links_list footer_links"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="login_and_add_to_cart/order_tracking.html"
+                  class="quick_links_list footer_links"
+                  >Cart</a
+                >
+              </li>
+              <li>
+                <a href="contact_us.html" class="quick_links_list footer_links"
+                  >Contact Us</a
+                >
               </li>
             </ul>
           </div>
 
-          <div class="legal">
+          <div class="legal legal_large_device">
             <h1 class="footer_headings">LEGAL</h1>
             <ul class="footer_list">
               <li>
