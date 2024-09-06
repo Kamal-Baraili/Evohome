@@ -230,7 +230,7 @@ header {
 
 .main_container {
   width: 87.8%;
-  height: 593px;
+  height: auto;
   margin: 4.5em auto 0 auto;
   display: flex;
   justify-content: space-between;
@@ -242,11 +242,9 @@ header {
   height: 593px;
   background-color: #191818;
   padding: 24px 24px 40px 24px;
-  position: static;
-  z-index: 1;
 }
 
-.left_container img {
+.left_container > img {
   width: 100%;
   height: 247px;
   object-fit: cover;
@@ -255,18 +253,18 @@ header {
 .profile_wrapper {
   margin: 2em 0 4.5em 0;
   width: 100%;
-  height: 152px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.profile_wrapper a,
-.logout_hyperlink {
+.profile_wrapper a {
   width: 100%;
   text-decoration: none;
-  padding: 8px 134px 8px 16px;
+  padding: 8px 16px 8px 16px;
+  margin-bottom: 0.95em;
   font-family: "Inter" sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -280,6 +278,7 @@ header {
 }
 
 .icon_and_text {
+  margin: 0;
   padding: 0;
   width: 100%;
   height: 25px;
@@ -295,21 +294,20 @@ header {
 }
 
 .logout_hyperlink {
-  display: flex;
-  align-items: center;
+  margin-top: 4em;
 }
 
 /* Right container */
 
 .right_container {
   width: 67.11%;
-  height: 418.72px;
+  height: auto;
   margin-top: 4em;
 }
 
 .order_id_container {
   width: 100%;
-  height: 201.36px;
+  height: auto;
   padding: 1.5em 2em;
   display: flex;
   justify-content: space-between;
@@ -318,15 +316,12 @@ header {
 }
 
 .order_contents {
-  width: 58.43%;
-  height: 153.36px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 500px;
+  height: auto;
 }
 
 .order_heading {
-  margin: 0;
+  margin: 0 0 1em 0;
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 22.68px;
@@ -336,7 +331,7 @@ header {
 
 .order_products {
   width: 100%;
-  height: 82.36px;
+  height: auto;
   display: flex;
   justify-content: space-between;
 }
@@ -410,6 +405,139 @@ header {
   color: #ffffff;
   border: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1280px) {
+  .order_id_container {
+    padding: 1em 1.25em;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .profile_details_flex {
+    justify-content: flex-start;
+  }
+
+  .profile_details_flex span:not(:first-child) {
+    margin-left: 0.75em;
+  }
+
+  .order_id_container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .track_button {
+    margin-top: 1em;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  /*left container*/
+  .left_container > img {
+    height: 220px;
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  /*left container*/
+  .left_container > img {
+    height: 200px;
+    margin-bottom: 2.5em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /*left container*/
+  .main_container {
+    flex-direction: column;
+  }
+
+  .left_container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 1.5em auto;
+    display: flex;
+    padding: 1em;
+  }
+
+  .left_container > img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 0;
+    order: 2;
+  }
+
+  .profile_wrapper a {
+    margin-bottom: 0;
+  }
+
+  .logout_hyperlink {
+    margin-top: 0;
+  }
+
+  .profile_wrapper {
+    margin: 0;
+    margin-right: 2em;
+  }
+  .right_container {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .main_container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .main_container {
+    width: 98%;
+  }
+
+  .order_contents {
+    width: 100%;
+  }
+
+  .order_products {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .order_products > div:last-child {
+    margin: 1em 0;
+  }
+
+  .order_item {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  /*left container*/
+  .left_container > img {
+    width: 50%;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 383px) {
+  /*left container*/
+  .left_container {
+    padding: 0.5em;
+  }
+
+  .left_container > img {
+    width: 38%;
+    height: 120px;
+  }
+
+  .profile_wrapper {
+    margin-right: 0.75em;
+  }
 }
 
 /* Footer */
