@@ -1444,13 +1444,26 @@ header {
   }
 
   .write_comment input {
-    width: 55%;
+    width: 58%;
   }
 }
 
 @media screen and (max-width: 383px) {
   .review_heading {
     font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+
+  .write_comment {
+    padding: 0 0.25em;
+  }
+}
+
+@media screen and (max-width: 259px) {
+  .reviews_container {
+    width: 98%;
   }
 }
 
