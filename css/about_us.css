@@ -513,6 +513,20 @@ header {
   }
 }
 
+@media screen and (max-width: 304px) {
+  .about_us_heading h1,
+  .about_us_heading span {
+    font-size: 1.75rem;
+    line-height: 45px;
+  }
+
+  .second_content_heading_and_paragraph h1,
+  .second_content_heading_and_paragraph span {
+    font-size: 1.25rem;
+    line-height: 45px;
+  }
+}
+
 /* See our products */
 
 .see_our_rugs_container {
@@ -669,6 +683,7 @@ header {
   }
 
   .see_our_rugs_container {
+    width: 100%;
     margin: 0 auto 5em auto;
   }
 
@@ -677,6 +692,7 @@ header {
   }
 
   .see_our_rugs_flex_item {
+    width: 100%;
     min-width: 242px !important;
   }
 }
@@ -914,6 +930,10 @@ header {
 @media screen and (max-width: 276px) {
   .subsrcibe_us_flex_item {
     width: 100%;
+  }
+
+  .subsrcibe_us_flex_item button {
+    padding: 0.5625em 10.5%;
   }
 }
 
