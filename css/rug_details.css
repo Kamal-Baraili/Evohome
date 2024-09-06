@@ -12,7 +12,7 @@ body {
 
 /* Typography */
 h1,
-span {
+h1 > span {
   font-family: "Cinzel", serif;
   font-weight: 700;
   color: #ffffff;
@@ -438,7 +438,7 @@ header {
 }
 
 #choose_your_color_flex img:first-child {
-margin-right: 5%;
+  margin-right: 5%;
 }
 
 .size_and_payment_container {
@@ -1071,14 +1071,14 @@ margin-right: 5%;
 
 .review {
   width: 100%;
-  height: 348px;
+  height: auto;
   padding: 1.5em 0;
   background: #1c1913;
 }
 
 .review_content_wrapper {
   width: 100%;
-  height: 176px;
+  height: auto;
   padding: 1em 1.5em;
   display: flex;
   justify-content: space-between;
@@ -1086,13 +1086,13 @@ margin-right: 5%;
 
 .review_content {
   width: 76.5%;
-  height: 144px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.review_content_wrapper img {
+.review_content_wrapper > img {
   width: 16.84%;
   height: 128px;
   object-fit: cover;
@@ -1105,7 +1105,7 @@ margin-right: 5%;
 
 .review_comment_profile {
   width: 100%;
-  height: 40px;
+  height: auto;
 }
 
 .review_comment_profile_image {
@@ -1137,7 +1137,7 @@ margin-right: 5%;
 }
 
 .review_profle_name_and_date {
-  width: 30%;
+  width: 43%;
   height: 28px;
   margin: 0.125em 0 0 0.75em;
   display: inline-block;
@@ -1147,8 +1147,8 @@ margin-right: 5%;
 .review_comment_profile_name {
   margin: 0;
   padding: 0;
-  width: 50%;
-  height: 20px;
+  width: 100%;
+  height: auto;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 1rem;
   font-weight: 600;
@@ -1178,31 +1178,34 @@ margin-right: 5%;
 .not_first_review {
   padding: 0;
   width: 100%;
-  height: 176px;
+  height: auto;
 }
 
 .like_button_container {
-  width: 44.7%;
-  height: 32px;
+  width: 100%;
+  height: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .like_button {
-  width: 27.36%;
-  height: 32px;
+  min-width: 91px;
+  height: auto;
   padding: 0.25em 0.5em;
   border: 1px solid #373737;
   position: relative;
+  background-color: #2a2a2a;
 }
 
 .ask_anything {
-  width: 70.21%;
-  height: 32px;
+  min-width: 231px;
+  height: auto;
+  margin-left: 0.5em;
   padding: 0.25em 0.5em;
   border: 1px solid #373737;
   position: relative;
+  background-color: #2a2a2a;
 }
 
 .ask_anything img {
@@ -1212,7 +1215,8 @@ margin-right: 5%;
 }
 
 .like_button h6,
-.ask_anything h6 {
+.ask_anything h6,
+.ask_anything span {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
@@ -1224,9 +1228,14 @@ margin-right: 5%;
   margin: 0.25em 0.25em;
 }
 
+.ask_anything span {
+  font-size: 1rem;
+  margin-left: 0.5em;
+}
+
 .review_reply {
-  width: 60%;
-  height: 132px;
+  width: 80%;
+  height: auto;
   margin: 0.25em 0;
   padding: 0.125em 0 1em 1.65em;
   display: flex;
@@ -1236,7 +1245,7 @@ margin-right: 5%;
   width: 15.93px;
   height: 22px;
   display: inline-block;
-  margin-right: 1em;
+  margin-right: 0.25em;
 }
 
 .reply_content {
@@ -1244,9 +1253,13 @@ margin-right: 5%;
 }
 
 .reply_like_button_container {
-  width: 62%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+.reply_like {
+  min-width: 83px;
 }
 
 .view_all_comments {
@@ -1259,25 +1272,20 @@ margin-right: 5%;
   text-align: left;
 }
 
-.comment_section {
-  position: relative;
-}
-
 .comment_border {
   width: 100%;
   height: 58px;
+  padding: 1px 0 0 1px;
   background-image: linear-gradient(to right, #e9ce6e7c, #b3873a83);
 }
 
 .write_comment {
-  width: 99.7%;
-  height: 56.5px;
+  width: 99.8%;
+  height: 56px;
   display: flex;
+  padding: 0 1.5em;
   justify-content: space-between;
-  position: absolute;
-  top: 1px;
-  margin-left: 1.5px;
-  padding: 1em 2em;
+  align-items: center;
   background-color: #1c1913;
 }
 
@@ -1303,7 +1311,7 @@ margin-right: 5%;
 }
 
 .comment_icons {
-  width: 12.05%;
+  min-width: 116px;
   height: 24px;
   display: flex;
   justify-content: space-between;
@@ -1317,9 +1325,48 @@ margin-right: 5%;
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .review_content_wrapper > img {
+    height: 110px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .review_content_wrapper > img {
+    height: 105px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .reviews_container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reviews_container {
+    width: 88%;
+  }
+}
+
 @media screen and (max-width: 660px) {
   .review_heading {
     font-size: 2.7rem;
+  }
+
+  .review_content_wrapper > img {
+    width: 22%;
+    height: 100px;
+  }
+
+  .review_comment_paragraph {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .small_screen_input {
+    display: none;
   }
 }
 
@@ -1331,11 +1378,24 @@ margin-right: 5%;
   .review_paragraph {
     font-size: 1rem;
   }
+
+  .reviews_container {
+    width: 90%;
+  }
+
+  .large_screen_input {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 546px) {
   .review_heading {
     font-size: 2.125rem;
+  }
+
+  .review_content_wrapper > img {
+    width: 22%;
+    height: 90px;
   }
 }
 
@@ -1344,11 +1404,47 @@ margin-right: 5%;
     font-size: 2rem;
     line-height: 50px;
   }
+
+  .review_content_wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review_content_wrapper > img {
+    width: 95%;
+    height: 150px;
+    order: -1;
+    margin-bottom: 2em;
+  }
+
+  .review_content {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 437px) {
   .review_heading {
     font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .ask_anything span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .ask_anything h6 {
+    display: none;
+  }
+
+  .ask_anything {
+    min-width: 90px;
+  }
+
+  .write_comment input {
+    width: 55%;
   }
 }
 
