@@ -462,6 +462,7 @@ header {
   display: flex;
   align-items: center;
   padding: 0.827em 1.65em;
+  transition: 0.9s;
 }
 
 .buy_now_link {
@@ -471,9 +472,10 @@ header {
   display: flex;
 }
 
-/* .buy_now_link:hover button {
-  padding: 0.5em 1em;
-} */
+.buy_now_link:hover button {
+  color: #ffffff;
+  cursor: pointer;
+}
 
 .buy_now_button img {
   height: 24.7px;

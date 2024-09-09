@@ -404,6 +404,12 @@ header {
   font-weight: 700;
   line-height: 22px;
   text-align: center;
+  cursor: pointer;
+}
+
+.color_options h3:hover {
+  background-image: linear-gradient(to right, #e9ce6e4f, #b3873a4e);
+  color: #ffffff !important;
 }
 
 #color_options h3:first-child {
@@ -487,10 +493,17 @@ header {
   text-align: center;
   margin: 1.5em 0 0 0;
   padding-top: 0.65em;
+  cursor: pointer;
 }
 
 .size_options_checked,
 .payment_options_checked {
+  background-image: linear-gradient(to right, #e9ce6e4f, #b3873a4e);
+  color: #ffffff !important;
+}
+
+.size_options h3:hover,
+.payment_options h3:hover {
   background-image: linear-gradient(to right, #e9ce6e4f, #b3873a4e);
   color: #ffffff !important;
 }
@@ -626,6 +639,7 @@ header {
   font-size: 16px;
   font-weight: 700;
   line-height: 21.57px;
+  cursor: pointer !important;
 }
 
 .price_buy_now {
@@ -1455,7 +1469,6 @@ header {
 }
 
 @media screen and (max-width: 380px) {
-
   .write_comment {
     padding: 0 0.25em;
   }
@@ -1569,6 +1582,16 @@ header {
   letter-spacing: 0.175em;
   text-align: left;
   color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.subsrcibe_us_flex_item button:hover {
+  background: linear-gradient(
+    90.73deg,
+    rgba(255, 226, 135, 0.5) 1.69%,
+    rgba(203, 170, 88, 0.5) 96.02%
+  );
 }
 
 @media screen and (max-width: 1450px) {

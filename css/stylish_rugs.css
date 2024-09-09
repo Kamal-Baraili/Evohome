@@ -472,6 +472,10 @@ header {
   cursor: pointer;
 }
 
+.second_grid_container a > button:hover {
+  color: #ffffff;
+}
+
 /* gadget explore section starts */
 
 .gadget_hyperlink {
@@ -558,6 +562,12 @@ header {
   font-weight: 700;
   line-height: 28px;
   cursor: pointer;
+  border: none;
+  transition: 0.9s;
+}
+
+.buy_your_rugs_button:hover {
+  color: #ffffff;
 }
 
 @media screen and (max-width: 1024px) {
@@ -866,6 +876,12 @@ header {
   font-weight: 500;
   line-height: 20px;
   color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.price_container button:hover {
+   background-image: linear-gradient(to right, #e6bd27, #aa761c);
 }
 
 @media screen and (max-width: 1155px) {
