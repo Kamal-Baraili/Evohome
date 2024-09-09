@@ -818,6 +818,16 @@ header {
   letter-spacing: 0.175em;
   text-align: left;
   color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.subsrcibe_us_flex_item button:hover {
+  background: linear-gradient(
+    90.73deg,
+    rgba(255, 226, 135, 0.5) 1.69%,
+    rgba(203, 170, 88, 0.5) 96.02%
+  );
 }
 
 @media screen and (max-width: 1450px) {
