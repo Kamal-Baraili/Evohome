@@ -87,6 +87,42 @@ header {
   display: none;
 }
 
+#side_menu {
+  height: 100vh;
+  border-left: 1px solid gray;
+  position: fixed;
+  background-color: black;
+  z-index: 5;
+  float: right;
+  right: 0;
+  display: none;
+  padding: 1rem;
+  transition: 1s;
+}
+
+#side_menu > svg {
+  float: right;
+  margin: 0.25rem 0.5rem 0 0;
+}
+
+#side_menu > ul {
+  margin: 4.25rem 1rem 0 1rem;
+  padding: 0;
+}
+
+.small_nav_list > a {
+  text-decoration: none;
+  color: #f4e5d6;
+}
+
+.small_nav_list {
+  margin: 0.5rem 0;
+  padding: 0.65rem;
+  border-bottom: 1px solid gray;
+  text-align: center;
+  list-style-type: none;
+}
+
 .nav_list {
   width: 38.5%;
   display: flex;
@@ -162,15 +198,55 @@ header {
   }
 }
 
+@media screen and (min-width: 800px) {
+  #side_menu {
+    width: 35%;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .small_devices_nav {
     width: 20%;
+  }
+
+  #side_menu {
+    width: 40%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .small_devices_nav {
     width: 33%;
+  }
+
+  #side_menu {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #side_menu {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  #side_menu {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .small_nav_list > a {
+    font-size: 0.85rem;
+  }
+
+  #side_menu {
+    padding: 0;
+  }
+
+  #side_menu > ul {
+    margin: 4rem 0;
   }
 }
 
